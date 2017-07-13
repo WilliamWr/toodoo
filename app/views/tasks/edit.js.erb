@@ -1,0 +1,23 @@
+$('.modal-body').html("<%= j render 'form', task: @task %>")
+$('.modal-body form').find('.actions').find('input[type=submit]').remove();
+$('.modal').modal()
+
+
+
+
+// function Human(full_name, age) {
+//     this.full_name = full_name;
+//     this.age = age;
+//
+// }
+// Human.prototype.sayName = function() {
+//       console.log("Hi, my name is " + this.full_name);
+//     };
+// Human.prototype.sayAge = function(){
+//     console.log("I'm " + this.age);
+//   };
+//
+// var will = new Human("Will", 23);
+//
+// will.sayName();
+// will.sayAge();
